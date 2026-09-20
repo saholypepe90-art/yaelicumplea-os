@@ -1377,17 +1377,6 @@
             <!-- Los 15 marcos polaroid se generan automáticamente con JavaScript para soporte de fotos o placeholders -->
         </div>
 
-        <!-- 13 Razones por las que eres mi Mejor Amiga -->
-        <section class="reasons-container">
-            <div class="section-header">
-                <h2 class="section-title">13 Razones por las que te Quiero Tanto 💖</h2>
-            </div>
-
-            <div class="reasons-grid" id="reasonsGrid">
-                <!-- 13 Tarjetas interactivas -->
-            </div>
-        </section>
-
         <!-- Pastel Interactivo de Cumpleaños -->
         <section class="cake-section">
             <div class="section-tag">¡Es hora de celebrar!</div>
@@ -1671,38 +1660,6 @@
             }
         });
 
-        /* ================= 5. GENERACIÓN DE LAS 13 RAZONES ================= */
-        const reasonsList = [
-            { t: "Tu risa contagiosa", d: "Porque es imposible estar triste cuando te ríes a carcajadas." },
-            { t: "Tus mejores consejos", d: "Siempre sabes exactamente qué decir para hacerme sentir bien." },
-            { t: "Nuestras ocurrencias", d: "Nadie entiende nuestras bromas privadas como nosotras dos." },
-            { t: "Tu lealtad incondicional", d: "Sé que siempre puedo confiar en ti sin importar nada." },
-            { t: "Tu estilo súper lindo", d: "Siempre tienes la mejor vibra y un estilo tan coquette y bonito." },
-            { t: "Tu buen corazón", d: "Porque siempre te preocupas por los demás y eres súper tierna." },
-            { t: "Nuestros secretos", d: "Guardas mis secretos mejor que un candado de oro." },
-            { t: "Las aventuras juntas", d: "Cualquier salida simple se vuelve divertida si estás tú." },
-            { t: "Tu apoyo constante", d: "Siempre celebras mis logros y me animas en todo." },
-            { t: "Hacer las tareas juntas", d: "Incluso estudiar se hace divertido si estamos charlando." },
-            { t: "Tu energía positiva", d: "Llegas a cualquier lugar y lo llenas de alegría y luz." },
-            { t: "Ser tú misma", d: "Amo que nunca finges y eres 100% auténtica y sincera." },
-            { t: "Por ser mi hermana de corazón", d: "Porque 13 años de vida son solo el inicio de toda una vida de amistad." }
-        ];
-
-        const reasonsGrid = document.getElementById('reasonsGrid');
-        reasonsList.forEach((r, idx) => {
-            const card = document.createElement('div');
-            card.className = 'reason-card';
-            card.innerHTML = `
-                <div class="reason-number">${idx + 1}</div>
-                <div class="reason-title">${r.t}</div>
-                <div class="reason-text">${r.d}</div>
-            `;
-            card.addEventListener('click', () => {
-                playChime(600 + (idx * 40), audioCtx ? audioCtx.currentTime : 0, 0.3);
-                launchConfettiBurst(card.getBoundingClientRect().left + 80, card.getBoundingClientRect().top + 50, 15);
-            });
-            reasonsGrid.appendChild(card);
-        });
 
         /* ================= 6. PASTEL INTERACTIVO & SOPLAR VELITAS ================= */
         const blowBtn = document.getElementById('blowBtn');
