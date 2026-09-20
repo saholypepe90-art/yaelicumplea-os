@@ -1,0 +1,51 @@
+====================================================================
+ GUÍA FÁCIL Y RÁPIDA: CÓMO SUBIR EL PROYECTO A GITHUB Y CREAR EL LINK
+====================================================================
+
+Esta carpeta contiene todo lo necesario para que la página de Yaela funcione
+en internet como una página web real (con su propio enlace), accesible desde
+cualquier celular (WhatsApp, Instagram, etc.) o computadora sin necesidad
+de que nadie descargue ningún archivo.
+
+--------------------------------------------------------------------
+PASO 1: ENTRAR A GITHUB Y CREAR EL REPOSITORIO
+--------------------------------------------------------------------
+1. Abre tu navegador y ve a: https://github.com
+   (Si ya tienes cuenta inicia sesión; si no, créate una gratis en 1 minuto).
+2. Haz clic en el botón verde "New" (Nuevo) o ve directo a: https://github.com/new
+3. En "Repository name", escribe el nombre que quieras para el enlace,
+   por ejemplo: yaela-cumpleanos
+4. Marca la casilla "Public" (para que cualquiera con el link pueda verlo).
+5. Haz clic en el botón verde abajo "Create repository".
+
+--------------------------------------------------------------------
+PASO 2: SUBIR LOS ARCHIVOS
+--------------------------------------------------------------------
+1. En la página que se abre, verás varias opciones. Haz clic donde dice:
+   "uploading an existing file" (o arriba en "Add file" -> "Upload files").
+2. Arrastra a esa ventana los archivos de esta carpeta:
+   - index.html
+   - la carpeta fotos
+   - README.md
+3. Espera a que termine de cargar la barra verde.
+4. Abajo haz clic en el botón verde "Commit changes".
+
+--------------------------------------------------------------------
+PASO 3: ACTIVAR GITHUB PAGES (GENERAR EL LINK)
+--------------------------------------------------------------------
+1. En la parte superior de tu repositorio, haz clic en la pestaña "Settings" (con ícono de engrane).
+2. En el menú de la izquierda, haz clic en "Pages".
+3. En la sección "Build and deployment":
+   - Bajo "Branch", haz clic en el menú que dice "None" y selecciona "main" (o "master").
+   - La carpeta déjala en "/(root)".
+   - Haz clic en el botón "Save".
+4. Espera 1 a 2 minutos y recarga la página (presiona F5).
+5. En la parte superior de Pages aparecerá un recuadro verde con tu link:
+   "Your site is live at https://tu-usuario.github.io/yaela-cumpleanos/"
+
+--------------------------------------------------------------------
+¡LISTO!
+--------------------------------------------------------------------
+Ese es el enlace que puedes copiar y enviarle a Yaela. Al abrirlo, se verá
+la animación completa, la música, las fotos y el deseo de cumpleaños.
+====================================================================
